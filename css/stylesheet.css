@@ -5,6 +5,7 @@
   --blanco: #ffffff;
   --negro: #000000;
   --gris: #e1e1e1;
+  --orange: rgb(233, 154, 8);
 }
 
 html {
@@ -229,6 +230,14 @@ img {
   font-size: 1.2rem;
 }
 
+.copyright {
+  color: var(--orange);
+  font-size: 1rem;
+  margin-top: 0;
+
+
+
+}
 .footer {
   background-color: var(--negro);
   padding: 2rem 0;
@@ -247,8 +256,13 @@ img {
   .sobre-nosotros__texto {
     flex: 0 0 calc(50% - 1rem);
   }
+  
 }
-
+@media(max-width: 767px) {
+  .copyright {
+    text-align: center;
+  }
+}
 @media (min-width: 768px) {
   .curso {
     display: grid;
